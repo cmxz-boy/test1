@@ -30,6 +30,13 @@
 		  <button else key="off" @click="on = true">off</button>
 	 </transition>
 	 <!-- 多个组件的过渡 -->
+
+	 <!-- 不带表头的table -->
+	 <!-- :show-header='false'  默认true -->
+	 <el-table :data="testData" :show-header='false' border>
+     <el-table-column prop="num" label=""></el-table-column>
+     <el-table-column prop="name" label=""></el-table-column>
+   </el-table>
 	</div>
 </template>
 
