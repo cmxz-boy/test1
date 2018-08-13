@@ -25,6 +25,7 @@
 
    <br><br>
    <!-- 过渡 -->
+   <h3>过渡</h3>
    <transition name="fade" mode="out-in">
 		  <button v-if="on" key="on" @click="on = false">on</button>
 		  <button else key="off" @click="on = true">off</button>
@@ -33,6 +34,7 @@
 
 	 <!-- 不带表头的table -->
 	 <!-- :show-header='false'  默认true -->
+	 <h3>不带表头的table</h3>
 	 <el-table :data="testData" :show-header='false' border>
      <el-table-column prop="num" label=""></el-table-column>
      <el-table-column prop="name" label=""></el-table-column>

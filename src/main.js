@@ -6,10 +6,15 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import App from './App'
 import router from './router'
+import GzPopup from 'gz-popup'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+Vue.use(GzPopup,{
+  limitWidth:980,
+  smWidth:70
+})
 
 /* eslint-disable no-new */
 new Vue({
